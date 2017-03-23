@@ -17,7 +17,7 @@ end register_file_arch;
 
 architecture Behavioral of register_file_arch is
 
-type RF is array (31 downto 0) of std_logic_vector(31 downto 0);
+type RF is array (0 to 31) of std_logic_vector(31 downto 0);
 
 signal R : RF; 
 
