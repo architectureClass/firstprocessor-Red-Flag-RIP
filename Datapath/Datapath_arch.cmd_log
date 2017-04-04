@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/UNIVERSITY/Arquitectura de computadores/Datapath/Datapath_arch.xst" -ofn "D:/UNIVERSITY/Arquitectura de computadores/Datapath/Datapath_arch.syr" 
+xst -intstyle ise -ifn "D:/UNIVERSITY/Arquitectura de computadores/Datapath/Datapath_arch.xst" -ofn "D:/UNIVERSITY/Arquitectura de computadores/Datapath/Datapath_arch.syr" 
+xst -intstyle ise -ifn "D:/UNIVERSITY/Arquitectura de computadores/Datapath/Datapath_arch.xst" -ofn "D:/UNIVERSITY/Arquitectura de computadores/Datapath/Datapath_arch.syr" 
+xst -intstyle ise -ifn "D:/UNIVERSITY/Arquitectura de computadores/Datapath/Datapath_arch.xst" -ofn "D:/UNIVERSITY/Arquitectura de computadores/Datapath/Datapath_arch.syr" 
+xst -intstyle ise -ifn "D:/UNIVERSITY/Arquitectura de computadores/Datapath/Datapath_arch.xst" -ofn "D:/UNIVERSITY/Arquitectura de computadores/Datapath/Datapath_arch.syr" 
