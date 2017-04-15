@@ -1,7 +1,0 @@
-vhdl work "UC_arch.vhd"
-vhdl work "register_file_arch.vhd"
-vhdl work "program_counter_arch.vhd"
-vhdl work "instruction_memory_arch.vhd"
-vhdl work "ALU_arch.vhd"
-vhdl work "adder_arch.vhd"
-vhdl work "Datapath_arch.vhd"
