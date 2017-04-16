@@ -68,7 +68,6 @@ end component;
 
 component PSR_arch is
     Port ( nzvc : in  STD_LOGIC_VECTOR (3 downto 0);
-           clk : in  STD_LOGIC;
            rst : in  STD_LOGIC;
            carry : out  STD_LOGIC);
 end component;
@@ -162,7 +161,6 @@ ALU: ALU_arch port map(
 		
 PSR: PSR_arch port map(
 		nzvc=>psrModifierOut,
-		clk=>clk,
 		rst=>rst,
 		carry=>psrOut
 		);
