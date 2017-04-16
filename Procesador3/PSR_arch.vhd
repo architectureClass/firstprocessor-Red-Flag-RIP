@@ -31,7 +31,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity PSR_arch is
     Port ( nzvc : in  STD_LOGIC_VECTOR (3 downto 0);
-           clk : in  STD_LOGIC;
            rst : in  STD_LOGIC;
            carry : out  STD_LOGIC);
 end PSR_arch;
@@ -39,14 +38,12 @@ end PSR_arch;
 architecture Behavioral of PSR_arch is
 
 begin
-	process(rst,clk,nzvc)
+	process(rst,nzvc)
 	begin
 		if rst='1' then
 			carry <= '0';
 		else
-			if rising_edge(clk) then
-				carry<=nzvc(0);
-			end if;
+			carry<=nzvc(0);
 		end if;
 	end process;
 end Behavioral;
