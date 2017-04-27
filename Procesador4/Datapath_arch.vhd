@@ -67,7 +67,8 @@ component MUX_datapath_arch is
 end component;
 
 component PSR_arch is
-    Port ( nzvc : in  STD_LOGIC_VECTOR (3 downto 0);
+    Port ( clk : in std_logic;
+			  nzvc : in  STD_LOGIC_VECTOR (3 downto 0);
            ncwp : in std_logic;
            rst : in  STD_LOGIC;
 			  cwp : out std_logic;
@@ -176,6 +177,7 @@ ALU: ALU_arch port map(
 		);
 		
 PSR: PSR_arch port map(
+		clk=>clk,
 		nzvc=>psrModifierOut,
 		rst=>rst,
 		ncwp=>cwpOut,

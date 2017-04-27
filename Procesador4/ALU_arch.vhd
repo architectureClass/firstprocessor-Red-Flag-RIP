@@ -37,11 +37,17 @@ architecture Behavioral of ALU_arch is
 --subx 	: "010010"
 --subxcc : "010011"
 
+--sll		: "010100"
+--srl		: "010101"
+
+--load	: "010110"
+--store	: "010111"
+
 begin
 
 process (SC,CRS1,CRS2,carry) begin
 	case SC is
-		when "000000" | "001000"=> result<= CRS1 + CRS2;
+		when "000000" | "001000" | "010110" | "010111"=> result<= CRS1 + CRS2;
 		when "000001" | "001001"=> result<= CRS1 and CRS2;
 		when "000010" | "001010"=> result<= CRS1 or CRS2;
 		when "000011" | "001011"=> result<= CRS1 xor CRS2;
@@ -51,6 +57,8 @@ process (SC,CRS1,CRS2,carry) begin
 		when "000111" | "001111"=> result<= CRS1 xnor CRS2;
 		when "010000" | "010001"=> result<= CRS1 + CRS2 + carry;
 		when "010010" | "010011"=> result<= CRS1 - CRS2 - carry;
+		when "010100" => result<= std_logic_vector(unsigned(CRS1) sll to_integer(unsigned(CRS2)));
+		when "010101" => result<= std_logic_vector(unsigned(CRS1) srl to_integer(unsigned(CRS2)));
 		when others=> result<= CRS1+CRS2;
 	end case;
 end process;
