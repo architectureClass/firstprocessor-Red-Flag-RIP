@@ -56,7 +56,7 @@ begin
 				when "010101" => aluop<="001101"; --Andncc
 				when "010110" => aluop<="001110"; --Orncc
 				when "010111" => aluop<="001111"; --Xnorcc
-				when "001000" => aluop<="001111"; --addx
+				when "001000" => aluop<="010000"; --addx
 				when "011000" => aluop<="010001"; --addxcc
 				when "001100" => aluop<="010010"; --subx
 				when "011100" => aluop<="010011"; --subxcc
